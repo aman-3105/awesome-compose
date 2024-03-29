@@ -1,0 +1,14 @@
+name: Run docker compose
+
+on: 
+    push
+
+jobs:
+    ascii_job:
+        runs-on: self-hosted
+        steps:
+
+        -   name: Execute docker compose 
+            run: |
+                cd flask-redis
+                docker compose up -d
