@@ -5,6 +5,9 @@ services:
       - '6379:6379'
   web:
     image: aman3105/flask-redis:latest
+    # build:
+    #   context: .
+    #   target: builder
     # flask requires SIGINT to stop gracefully
     # (default stop signal from Compose is SIGTERM)
     stop_signal: SIGINT
