@@ -17,7 +17,7 @@ jobs:
             uses: docker/login-action@v3
             with:
                 username: aman3105
-                password: dOC@man3105
+                password: dOC@MAN3105
 
         -   name: Build and push
             uses: docker/build-push-action@v5
